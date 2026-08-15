@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Fridge — Smart kitchen inventory &amp; meal planning | Hia Solutions Ltd</title>
 <meta name="description" content="My Fridge is a smart kitchen inventory app by Hia Solutions Ltd. Track what's in your fridge, import recipes, and see instantly what you're missing.">
-<link rel="icon" type="image/png" href="logo.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -110,6 +110,16 @@
     border:1.5px solid var(--line);color:var(--navy);text-decoration:none;
     padding:14px 26px;border-radius:12px;font-weight:600;font-size:15px;
     display:inline-flex;align-items:center;gap:8px;
+  }
+  .offer-badge{
+    margin-top:24px;display:inline-flex;align-items:center;gap:10px;
+    background:#fff;border:1px solid var(--line);border-radius:14px;
+    padding:12px 18px;font-size:14px;color:var(--ink);max-width:100%;
+    box-shadow:0 6px 18px -12px rgba(11,24,48,0.25);
+  }
+  .offer-dot{
+    width:10px;height:10px;border-radius:50%;background:var(--cyan);flex-shrink:0;
+    box-shadow:0 0 0 4px rgba(63,217,199,0.18);
   }
 
   /* Fridge illustration */
@@ -241,7 +251,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="brand" href="#top"><img src="logo.png" alt="My Fridge logo"> My Fridge</a>
+    <a class="brand" href="#top"><img src="assets/logo.png" alt="My Fridge logo"> My Fridge</a>
     <nav class="nav-links">
       <a href="#problem">Why</a>
       <a href="#features">Features</a>
@@ -258,12 +268,16 @@
   <!-- HERO -->
   <div class="wrap hero">
     <div>
-      <span class="tag">Hia Solutions Ltd · iOS app in development</span>
+      <span class="tag">Available on iOS · Android coming soon</span>
       <h1>Your fridge, finally&nbsp;organized.</h1>
-      <p class="lead">My Fridge turns your kitchen into a live inventory. Scan a receipt, see what you have, plan tomorrow's meals — and stop throwing food away.</p>
+      <p class="lead">My Fridge turns your kitchen into a live inventory. Scan a receipt, see what you have, plan tomorrow's meals — and stop throwing food away. We're the first app to give <strong>automated receipt scanning to everyone</strong>, because your time is too precious to spend typing shopping into a list.</p>
       <div class="hero-ctas">
         <a class="btn-primary" href="#contact">Get in touch →</a>
         <a class="btn-secondary" href="#features">See what it does</a>
+      </div>
+      <div class="offer-badge">
+        <span class="offer-dot"></span>
+        <span><strong>Launch offer:</strong> everyone who signs up gets Premium free until <strong>31 December 2026</strong>.</span>
       </div>
     </div>
 
@@ -343,6 +357,10 @@
           </div>
           <div class="feature-item">
             <span class="dot"></span>
+            <div><h3>Built with Flutter — a state-of-the-art framework</h3><p>My Fridge is crafted in Flutter, Google's cutting-edge cross-platform framework, so the app feels smooth and native on every phone and updates land fast.</p></div>
+          </div>
+          <div class="feature-item">
+            <span class="dot"></span>
             <div><h3>Coming next: expiry-based suggestions</h3><p>We're building meal recommendations that prioritise what's about to go off, learned from your own eating habits.</p></div>
           </div>
         </div>
@@ -390,7 +408,7 @@
         <h2>Built by Hia Solutions Ltd.</h2>
       </div>
       <div class="team-card">
-        <img class="team-photo" src="logo.png" alt="Ioan-Alexandru Herdea">
+        <img class="team-photo" src="assets/logo.png" alt="Ioan-Alexandru Herdea">
         <div>
           <h3>Ioan-Alexandru Herdea</h3>
           <div class="role">Founder &amp; CEO</div>

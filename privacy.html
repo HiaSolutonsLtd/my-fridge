@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Privacy Policy — My Fridge | Hia Solutions Ltd</title>
-<link rel="icon" type="image/png" href="logo.png">
+<link rel="icon" type="image/png" href="assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
@@ -48,7 +48,6 @@
     <li><strong>Account information:</strong> your email address and display name, used to create and secure your account via Firebase Authentication.</li>
     <li><strong>Inventory data:</strong> the food items, quantities, and expiry dates you add or import, including data captured through the receipt-scanning feature.</li>
     <li><strong>Recipe data:</strong> recipes you import or create within the App.</li>
-    <li><strong>Usage data:</strong> basic technical information (such as app version and device type) used to keep the App reliable.</li>
   </ul>
 
   <h2>How we use your information</h2>
@@ -62,13 +61,18 @@
   <h2>How your data is stored</h2>
   <p>Your data is stored using Google Firebase (Authentication and Firestore). Each user's inventory is kept in an isolated, access-controlled partition of the database. We do not sell your personal data to third parties.</p>
 
+  <h2>Other services we use</h2>
+  <ul>
+    <li><strong>Firebase Remote Config:</strong> the App fetches settings (such as feature availability) from Firebase Remote Config. This does not send any of your personal or inventory data to Google.</li>
+    <li><strong>Sharing from other apps:</strong> when you share a recipe link into My Fridge from another app (for example, a browser), that link is handled on your device and passed to the recipe importer. We do not store the link separately from the recipe you choose to save.</li>
+  </ul>
+
   <h2>Receipt scanning</h2>
   <p>The receipt-scanning feature uses on-device text recognition (Google ML Kit) to read grocery receipts you photograph. Recognised items are added to your inventory; we do not use receipt photos for any purpose beyond extracting this information.</p>
 
   <h2>Your choices</h2>
   <ul>
     <li>You can review and edit your inventory at any time within the App.</li>
-    <li>You can delete your account from the Account screen, which removes your account and associated data from our systems.</li>
     <li>You can contact us at any time to request access to, correction of, or deletion of your data.</li>
   </ul>
 
