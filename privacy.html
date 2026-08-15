@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — My Fridge | Hia Solutions Ltd</title>
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#142850; --navy-deep:#0b1830; --sky:#8fb8e8; --sky-soft:#e4edf9;
+    --cyan:#3fd9c7; --paper:#f5f7fb; --ink:#10182b; --ink-soft:#4a5470; --line:rgba(20,40,80,0.12);
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.7;}
+  h1,h2{font-family:'Space Grotesk',sans-serif;color:var(--navy);}
+  .wrap{max-width:760px;margin:0 auto;padding:0 28px;}
+  header{border-bottom:1px solid var(--line);padding:16px 0;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:18px;color:var(--navy);text-decoration:none;}
+  .brand img{width:32px;height:32px;border-radius:8px;}
+  main{padding:56px 0 80px;}
+  h1{font-size:36px;}
+  .updated{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--ink-soft);margin-top:10px;letter-spacing:0.04em;text-transform:uppercase;}
+  h2{font-size:20px;margin-top:44px;}
+  p, li{color:var(--ink-soft);font-size:15.5px;}
+  a{color:var(--navy);}
+  ul{padding-left:20px;}
+  footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--ink-soft);}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="assets/logo.png" alt="My Fridge logo"> My Fridge</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 15 August 2026</p>
+
+  <p>Hia Solutions Ltd ("we", "us", "our") operates the My Fridge mobile application (the "App"). This page explains what information we collect, how we use it, and the choices you have.</p>
+
+  <h2>Information we collect</h2>
+  <ul>
+    <li><strong>Account information:</strong> your email address and display name, used to create and secure your account via Firebase Authentication.</li>
+    <li><strong>Inventory data:</strong> the food items, quantities, and expiry dates you add or import, including data captured through the receipt-scanning feature.</li>
+    <li><strong>Recipe data:</strong> recipes you import or create within the App.</li>
+    <li><strong>Usage data:</strong> basic technical information (such as app version and device type) used to keep the App reliable.</li>
+  </ul>
+
+  <h2>How we use your information</h2>
+  <ul>
+    <li>To operate your personal inventory and keep it in sync across your devices.</li>
+    <li>To match recipes against your inventory and show missing ingredients.</li>
+    <li>To authenticate you and protect your account.</li>
+    <li>To maintain and improve the App.</li>
+  </ul>
+
+  <h2>How your data is stored</h2>
+  <p>Your data is stored using Google Firebase (Authentication and Firestore). Each user's inventory is kept in an isolated, access-controlled partition of the database. We do not sell your personal data to third parties.</p>
+
+  <h2>Receipt scanning</h2>
+  <p>The receipt-scanning feature uses on-device text recognition (Google ML Kit) to read grocery receipts you photograph. Recognised items are added to your inventory; we do not use receipt photos for any purpose beyond extracting this information.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>You can review and edit your inventory at any time within the App.</li>
+    <li>You can delete your account from the Account screen, which removes your account and associated data from our systems.</li>
+    <li>You can contact us at any time to request access to, correction of, or deletion of your data.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>My Fridge is not directed at children under 13, and we do not knowingly collect personal information from children.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this policy as the App evolves. We'll update the "last updated" date above when we do.</p>
+
+  <h2>Contact us</h2>
+  <p>Questions about this policy or your data can be sent to <a href="mailto:office@herdea.co.uk">office@herdea.co.uk</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="year"></span> Hia Solutions Ltd. All rights reserved.</div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
